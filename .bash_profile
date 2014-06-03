@@ -1,6 +1,5 @@
 alias clearmost='drush cc menu; drush cc registry; drush cc theme-registry; drush cc views;'
 alias createdb='. /Users/wagner/Documents/scripts/createdb.bash'
-alias drush='/usr/local/lib/drush/drush'
 alias d='drush'
 alias diesp='drush dis securepages -y;'
 alias dropdb='. /Users/wagner/Documents/scripts/dropdb.bash'
