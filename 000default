@@ -1,0 +1,81 @@
+NameVirtualHost *:80
+Listen 443
+NameVirtualHost *:443
+
+<Directory "/Users/wagner/Sites/umn/www//">
+Allow From All
+AllowOverride All
+Options +Indexes
+</Directory>
+<VirtualHost *:80>
+	ServerName "umn.loc"
+	DocumentRoot "/Users/wagner/Sites/umn/www/"
+ServerAlias umn.site.loc
+ServerAlias umn.grad.loc
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerName "umn.loc"
+	DocumentRoot "/Users/wagner/Sites/umn/www/"
+
+
+</VirtualHost>
+
+<Directory "/Users/wagner/Sites/test/">
+Allow From All
+AllowOverride All
+Options +Indexes
+</Directory>
+<VirtualHost *:80>
+	ServerName "test.site"
+	DocumentRoot "/Users/wagner/Sites/test"
+</VirtualHost>
+
+<Directory "/Users/wagner/Sites/umn/www//">
+Allow From All
+AllowOverride All
+Options +Indexes
+</Directory>
+<VirtualHost *:80>
+	ServerName "umn.rochester.loc"
+	DocumentRoot "/Users/wagner/Sites/umn/www/"
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerName "umn.rochester.loc"
+	DocumentRoot "/Users/wagner/Sites/umn/www/"
+
+</VirtualHost>
+
+<Directory "/Users/wagner/Sites/regents/www/">
+Allow From All
+AllowOverride All
+Options +Indexes
+</Directory>
+<VirtualHost *:80>
+	ServerName "regents.loc"
+	DocumentRoot "/Users/wagner/Sites/regents/www"
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerName "regents.loc"
+	DocumentRoot "/Users/wagner/Sites/regents/www"
+
+</VirtualHost>
+
+<Directory "/Users/wagner/Sites/gencat/www/">
+Allow From All
+AllowOverride All
+Options +Indexes
+</Directory>
+<VirtualHost *:80>
+	ServerName "gencat.loc"
+	DocumentRoot "/Users/wagner/Sites/gencat/www"
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerName "gencat.loc"
+	DocumentRoot "/Users/wagner/Sites/gencat/www"
+
+</VirtualHost>
+
